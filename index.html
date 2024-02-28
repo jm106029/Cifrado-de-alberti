@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Alberti</title>
+</head>
+<body>
+    <h1>Cifrado de Alberti</h1>
+    <form action="/backend/cifrar_descifrar.php" method="post">
+        <label for="texto">Texto:</label><br>
+
+        <!-- Cuadro de texto -->
+        <textarea id="texto" name="texto" rows="4" cols="50"></textarea><br>
+      
+        <!-- Opciones de seleccion -->
+        <label for="accion">Acción:</label>
+        <select id="accion" name="accion">
+            <option value="cifrar">Cifrar</option>
+            <option value="descifrar">Descifrar</option>
+        </select><br>
+
+        <!-- Submit para enviar mi texto -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
